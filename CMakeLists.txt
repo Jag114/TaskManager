@@ -23,6 +23,12 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(TaskManager
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        models/taskmodel.h models/taskmodel.cpp
+        data/task.h data/task.cpp
+        storage/filehandler.h storage/filehandler.cpp
+        utils/timerhelp.h utils/timerhelp.cpp
+        data/task.h data/task.cpp
+        models/taskmodel.h models/taskmodel.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TaskManager APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
